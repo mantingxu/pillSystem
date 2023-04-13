@@ -71,7 +71,7 @@ def split_capsule_pill(folder_name, resize_path, detect_dir):
         with open(split_pill_path, 'a+') as f:
             for message in pill_message:
                 f.write(message)
-    return
+    return [split_capsule_path, split_capsule_path]
 
 
 def resize_pill(crop_dir, detect_dir):
@@ -89,6 +89,5 @@ def resize_pill(crop_dir, detect_dir):
         res = resize_image(img)
         res_path = resize_path + '/' + name + '.png'
         cv2.imwrite(res_path, res)
-    split_capsule_pill(folder_name, resize_path, detect_dir)
-    return resize_path
-
+    [capsule_class_txt, pill_class_txt] = split_capsule_pill(folder_name, resize_path, detect_dir)
+    return [resize_path, capsule_class_txt, pill_class_txt]
