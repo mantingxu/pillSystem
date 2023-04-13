@@ -1,5 +1,0 @@
-runs/resize/exp0408/4-0.png
-runs/resize/exp0408/5-0.png
-runs/resize/exp0408/6-0.png
-runs/resize/exp0408/7-0.png
-runs/resize/exp0408/9-1.png

@@ -1,0 +1,6 @@
+runs/resize/exp/0-0.png
+runs/resize/exp/2-0.png
+runs/resize/exp/6-1.png
+runs/resize/exp/8-0.png
+runs/resize/exp/8-1.png
+runs/resize/exp/9-0.png
