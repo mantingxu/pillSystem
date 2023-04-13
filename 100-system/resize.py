@@ -39,13 +39,12 @@ def resize_image(image, height=IMAGE_SIZE, width=IMAGE_SIZE):
 
 
 def split_capsule_pill(folder_name, resize_path, detect_dir):
-    print('split')
     split_capsule_path = 'runs/split/' + folder_name + '/capsule.txt'
     split_pill_path = 'runs/split/' + folder_name + '/pill.txt'
     os.makedirs('runs/split/' + folder_name)
     for resize_img_path in sorted(glob.glob(resize_path + '/*.png')):
         print(resize_img_path)
-        line_number = resize_img_path.split('/')[-1].split('.')[0].split('-')[-1].replace('.png','')
+        line_number = resize_img_path.split('/')[-1].split('.')[0].split('-')[-1].replace('.png', '')
         name = resize_img_path.split('/')[-1].split('.')[0].split('-')[0]
         print(name)
         label_path = detect_dir + '/labels/' + str(name) + '.txt'
