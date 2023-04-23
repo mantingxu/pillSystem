@@ -1,0 +1,289 @@
+pred: 100
+truth: 100
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/100_0-0.png
+['100', '618', '2529']
+pred: 618
+truth: 618
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/618_1-0.png
+['618', '12266', '2529']
+pred: 85
+truth: 85
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/85_0-0.png
+['85', '328', '325']
+pred: 8389
+truth: 8389
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/8389_1-0.png
+['8389', '2321', '12530']
+pred: 85
+truth: 85
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/85_1-0.png
+['85', '227', '2529']
+pred: 12370
+truth: 12370
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12370_0-0.png
+['12370', '12083', '328']
+pred: 113
+truth: 113
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/113_1-0.png
+['113', '227', '2326']
+pred: 6081
+truth: 6081
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6081_1-0.png
+['6081', '12183', '12530']
+pred: 12222
+truth: 12222
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12222_0-0.png
+['12222', '12501', '227']
+pred: 12266
+truth: 12266
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12266_0-0.png
+['12266', '618', '2529']
+pred: 12183
+truth: 12183
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12183_0-0.png
+['12183', '12185', '12530']
+pred: 12448
+truth: 12448
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12448_1-0.png
+['12448', '12222', '12501']
+pred: 4115
+truth: 4115
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4115_1-0.png
+['4115', '325', '2311']
+pred: 2033
+truth: 2033
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2033_0-0.png
+['2033', '12083', '2321']
+pred: 2326
+truth: 2326
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2326_1-0.png
+['2326', '6081', '8406']
+pred: 618
+truth: 618
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/618_0-0.png
+['618', '12561', '2529']
+pred: 4061
+truth: 4115
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4115_0-0.png
+['4061', '4115', '2311']
+pred: 325
+truth: 325
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/325_1-0.png
+['325', '4115', '4061']
+pred: 12439
+truth: 12439
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12439_1-0.png
+['12439', '6326', '8389']
+pred: 12083
+truth: 12083
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12083_1-0.png
+['12083', '12370', '328']
+pred: 12561
+truth: 12561
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12561_1-0.png
+['12561', '12109', '85']
+pred: 6501
+truth: 6501
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6501_1-0.png
+['6501', '326', '12083']
+pred: 12530
+truth: 12530
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12530_0-0.png
+['12530', '6081', '12183']
+pred: 227
+truth: 227
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/227_1-0.png
+['227', '328', '113']
+pred: 2321
+truth: 2321
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2321_1-0.png
+['2321', '2326', '8389']
+pred: 4061
+truth: 4061
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4061_1-0.png
+['4061', '4115', '53']
+pred: 6356
+truth: 6356
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6356_1-0.png
+['6356', '12501', '12561']
+pred: 12222
+truth: 12222
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12222_1-0.png
+['12222', '227', '12448']
+pred: 6501
+truth: 6501
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6501_0-0.png
+['6501', '326', '2033']
+pred: 6356
+truth: 6356
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6356_0-0.png
+['6356', '617', '12501']
+pred: 12542
+truth: 12542
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12542_1-0.png
+['12542', '12083', '227']
+pred: 6081
+truth: 6081
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6081_0-0.png
+['6081', '12530', '12183']
+pred: 617
+truth: 617
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/617_0-0.png
+['617', '325', '12561']
+pred: 2033
+truth: 2033
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2033_1-0.png
+['2033', '53', '12083']
+pred: 12501
+truth: 12501
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12501_1-0.png
+['12501', '328', '53']
+pred: 325
+truth: 325
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/325_0-0.png
+['325', '4115', '617']
+pred: 617
+truth: 617
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/617_1-0.png
+['617', '325', '6081']
+pred: 100
+truth: 100
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/100_1-0.png
+['100', '2529', '618']
+pred: 8406
+truth: 8406
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/8406_1-0.png
+['8406', '2529', '12501']
+pred: 12185
+truth: 12185
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12185_1-0.png
+['12185', '12109', '12183']
+pred: 113
+truth: 113
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/113_0-0.png
+['113', '227', '2326']
+pred: 12109
+truth: 12109
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12109_0-0.png
+['12109', '12185', '12542']
+pred: 328
+truth: 328
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/328_1-0.png
+['328', '2326', '227']
+pred: 2529
+truth: 2529
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2529_0-0.png
+['2529', '2033', '328']
+pred: 53
+truth: 53
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/53_1-0.png
+['53', '113', '12561']
+pred: 12561
+truth: 12561
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12561_0-0.png
+['12561', '12109', '617']
+pred: 326
+truth: 326
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/326_0-0.png
+['326', '6501', '12083']
+pred: 12109
+truth: 12109
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12109_1-0.png
+['12109', '12185', '12448']
+pred: 8406
+truth: 8406
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/8406_0-0.png
+['8406', '12266', '6501']
+pred: 2321
+truth: 2321
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2321_0-0.png
+['2321', '326', '12561']
+pred: 8389
+truth: 8389
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/8389_0-0.png
+['8389', '12439', '2326']
+pred: 12266
+truth: 12266
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12266_1-0.png
+['12266', '618', '12109']
+pred: 12083
+truth: 12083
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12083_0-0.png
+['12083', '12370', '328']
+pred: 12185
+truth: 12185
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12185_0-0.png
+['12185', '12183', '6081']
+pred: 12542
+truth: 12542
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12542_0-0.png
+['12542', '227', '12083']
+pred: 12448
+truth: 12448
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12448_0-0.png
+['12448', '12222', '12501']
+pred: 2326
+truth: 2326
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2326_0-0.png
+['2326', '328', '227']
+pred: 12370
+truth: 12501
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12501_0-0.png
+['12370', '12501', '12083']
+pred: 12370
+truth: 12370
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12370_1-0.png
+['12370', '12083', '328']
+pred: 12183
+truth: 12183
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12183_1-0.png
+['12183', '12185', '12530']
+pred: 53
+truth: 53
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/53_0-0.png
+['53', '2033', '12561']
+pred: 6326
+truth: 12439
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12439_0-0.png
+['6326', '12439', '12448']
+pred: 12530
+truth: 12530
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12530_1-0.png
+['12530', '12183', '6081']
+pred: 6326
+truth: 6326
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6326_1-0.png
+['6326', '12439', '12448']
+pred: 326
+truth: 326
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/326_1-0.png
+['326', '6501', '12083']
+pred: 6326
+truth: 6326
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/6326_0-0.png
+['6326', '12439', '12083']
+pred: 2311
+truth: 2311
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2311_0-0.png
+['2311', '53', '325']
+pred: 4061
+truth: 4061
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4061_0-0.png
+['4061', '4115', '2311']
+pred: 328
+truth: 328
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/328_0-0.png
+['328', '227', '2033']
+pred: 227
+truth: 227
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/227_0-0.png
+['227', '12542', '113']
+pred: 2529
+truth: 2529
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2529_1-0.png
+['2529', '2033', '618']
+pred: 2311
+truth: 2311
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2311_1-0.png
+['2311', '53', '4115']
+{'12439', '4115', '12501'}

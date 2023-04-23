@@ -1,0 +1,13 @@
+pred: 4061
+truth: 4115
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4115_0-0.png
+['4061', '4115', '2311']
+pred: 12370
+truth: 12501
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12501_0-0.png
+['12370', '12501', '12083']
+pred: 6326
+truth: 12439
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12439_0-0.png
+['6326', '12439', '12448']
+{'4115', '12501', '12439'}
