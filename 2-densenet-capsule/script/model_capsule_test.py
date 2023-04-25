@@ -22,7 +22,7 @@ def get_key(l, val):
 
 
 def predict_capsule_id():
-    logger_path = '../logger/logger-error.txt'
+    logger_path = '../logger/logger-error_append.txt'
     logging.basicConfig(filename=logger_path, level=logging.INFO, format="%(message)s", filemode="w")
     print('logger path: ', logger_path)
     count = 0
@@ -46,7 +46,7 @@ def predict_capsule_id():
         input_batch = input_tensor.unsqueeze(0)  # create a mini-batch as expected by the model
 
         # https://codeantenna.com/a/FMqJsklDXI
-        path = "../weight/capsule_accuracy_0420.pth"
+        path = "../weight/capsule_accuracy_0423_append_train.pth"
         model = torch.load(path)
 
         # predict model
@@ -114,7 +114,7 @@ def predict_capsule_id():
     ndarray = np.asarray(df_cm)
 
     os.makedirs('../csv', exist_ok=True)
-    df_cm.to_csv('../csv/confusion_capsule-0423.csv')
+    df_cm.to_csv('../csv/confusion_capsule-0423_append.csv')
 
     # logging.info('confusion matrix pair')
     # for i in range(len(ndarray[0])):
@@ -129,7 +129,7 @@ def predict_capsule_id():
     sns.heatmap(df_cm, annot=True, fmt="d", cmap='BuGn')
     plt.xlabel("prediction")
     plt.ylabel("label (ground truth)")
-    plt.savefig("../confusion_matrix_capsule/confusion_matrix_capsule_0423.png")
+    plt.savefig("../confusion_matrix_capsule/confusion_matrix_capsule_0423_append.png")
     test_dir = '/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/'
     test_data_length = len(os.listdir(test_dir))
 

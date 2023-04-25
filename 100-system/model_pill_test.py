@@ -60,16 +60,17 @@ def predict_pill_id(resize_dir, pill_class_txt):
             # predict custom pill id (top-1 custom id)
             predict_cla = torch.argmax(predict).cpu().numpy()
             pred = class_indict[str(predict_cla)]
-            pre_message = 'predict: ' + pred
-            logging.info(pre_message)
+            logging.info(pred)
 
             top5_id_numpy = top5_id
             top5_real_id_numpy = []
+            top5_prob_numpy = []
+            for i in top5_prob:
+                top5_prob_numpy.append(i)
+
             for i in top5_id_numpy:
                 top5_real_id_numpy.append(class_indict[str(i)])
-            # print(top5_real_id_numpy)
-            # print(top5_prob)
-            logging.info('top-5 real id')
+
             logging.info(top5_real_id_numpy)
-            logging.info('top-5 probability')
-            logging.info(top5_prob)
+            logging.info(top5_prob_numpy)
+    return logger_file

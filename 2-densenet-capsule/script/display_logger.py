@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-path = '../logger/logger-error.txt'
+path = '../logger/logger-error_append.txt'
 line_count = 0
 
 

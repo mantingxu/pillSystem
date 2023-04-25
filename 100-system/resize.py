@@ -2,7 +2,7 @@ import cv2
 import glob
 import os
 
-IMAGE_SIZE = 150
+IMAGE_SIZE = 200
 
 
 def resize_image(image, height=IMAGE_SIZE, width=IMAGE_SIZE):
@@ -41,7 +41,9 @@ def resize_image(image, height=IMAGE_SIZE, width=IMAGE_SIZE):
 def split_capsule_pill(folder_name, resize_path, detect_dir):
     split_capsule_path = 'runs/split/' + folder_name + '/capsule.txt'
     split_pill_path = 'runs/split/' + folder_name + '/pill.txt'
-    os.makedirs('runs/split/' + folder_name)
+    split_folder_path = 'runs/split/' + folder_name
+    if not os.path.exists(split_folder_path):
+        os.makedirs(split_folder_path)
     for resize_img_path in sorted(glob.glob(resize_path + '/*.png')):
         print(resize_img_path)
         line_number = resize_img_path.split('/')[-1].split('.')[0].split('-')[-1].replace('.png', '')
@@ -64,17 +66,26 @@ def split_capsule_pill(folder_name, resize_path, detect_dir):
             pill_message.append(resize_img_path + '\n')
         else:
             capsule_message.append(resize_img_path + '\n')
-        with open(split_capsule_path, 'a+') as f:
+        if os.path.exists(split_capsule_path):
+            capsule_append_write = 'a'  # append if already exists
+        else:
+            capsule_append_write = 'w'  # make a new file if not
+        if os.path.exists(split_pill_path):
+            pill_append_write = 'a'  # append if already exists
+        else:
+            pill_append_write = 'w'  # make a new file if not
+        with open(split_capsule_path, capsule_append_write) as f:
             for message in capsule_message:
                 f.write(message)
-        with open(split_pill_path, 'a+') as f:
+        with open(split_pill_path, pill_append_write) as f:
             for message in pill_message:
                 f.write(message)
     return [split_capsule_path, split_capsule_path]
 
 
 def resize_pill(crop_dir, detect_dir):
-    detect_dir = str(detect_dir.as_posix())
+    if not isinstance(detect_dir, str):
+        detect_dir = str(detect_dir.as_posix())
     folder_name = crop_dir.split('/')[-1]  # expN
     resize_path = 'runs/resize/' + folder_name
     if not os.path.isdir(resize_path):

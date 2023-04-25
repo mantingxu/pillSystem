@@ -1,0 +1,7 @@
+runs/resize/exp4/12591_0-0.png
+runs/resize/exp4/12591_1-0.png
+runs/resize/exp4/2326_0-0.png
+runs/resize/exp4/2326_1-0.png
+runs/resize/exp4/2326_2-0.png
+runs/resize/exp4/617_0-0.png
+runs/resize/exp4/6326_0-0.png

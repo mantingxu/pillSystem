@@ -19,8 +19,8 @@ data_dir = '/media/wall/4TB_HDD/full_dataset/capsule_dataset_sharpen'
 # valid_data_dir = '/media/wall/4TB_HDD/1211_dataset/split_train_valid/valid_pytorch'
 model_name = "densenet"
 num_classes = 36
-batch_size = 32
-num_epochs = 500
+batch_size = 64
+num_epochs = 200
 # Flag for feature extracting. When False, we finetune the whole model,
 #   when True we only update the reshaped layer params
 feature_extract = False
@@ -110,7 +110,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
 
 
 def saveModel():
-    path = "../weight/capsule_accuracy_0423.pth"
+    path = "../weight/capsule_accuracy_0423_append_train.pth"
     # torch.save(model.state_dict(), path)
     torch.save(model_ft, path)
 
@@ -142,15 +142,14 @@ def initialize_model(model_name, num_classes, feature_extract, use_pretrained=Fa
 # Initialize the model for this run
 model_ft, input_size = initialize_model(model_name, num_classes, feature_extract, use_pretrained)
 
-
 print("Initializing Datasets and Dataloaders...")
 dataset = torchvision.datasets.ImageFolder(data_dir,
-                                             transform=transforms.Compose([
-                                                 transforms.ToTensor(),
-                                                 transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-                                                 #transforms.Normalize(mean=[0.137, 0.134, 0.116], std=[0.293, 0.286, 0.254]),
-                                             ])
-                                             )
+                                           transform=transforms.Compose([
+                                               transforms.ToTensor(),
+                                               transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+                                               # transforms.Normalize(mean=[0.137, 0.134, 0.116], std=[0.293, 0.286, 0.254]),
+                                           ])
+                                           )
 #
 # valid_set = torchvision.datasets.ImageFolder(valid_data_dir,
 #                                              transform=transforms.Compose([
@@ -160,16 +159,16 @@ dataset = torchvision.datasets.ImageFolder(data_dir,
 #                                              ])
 #                                              )
 
-train_set, valid_set = torch.utils.data.random_split(dataset, [14*36, 6*36])
+train_set, valid_set = torch.utils.data.random_split(dataset, [15 * 36, 10 * 36])
 
 # print(train_set.class_to_idx)
 # pill_list = image_datasets['train'].class_to_idx
 # pill_list = train_set.class_to_idx
 
 
-#train_set_size = int(len(train_set) * 0.7)
-#valid_set_size = len(train_set) - train_set_size
-#train_set, valid_set = data.random_split(train_set, [train_set_size, valid_set_size])
+# train_set_size = int(len(train_set) * 0.7)
+# valid_set_size = len(train_set) - train_set_size
+# train_set, valid_set = data.random_split(train_set, [train_set_size, valid_set_size])
 
 train_set_size = int(len(train_set))
 valid_set_size = int(len(valid_set))
@@ -190,15 +189,14 @@ image_datasets['val'] = valid_set
 # write dict into json file
 import json
 
-#json_str = json.dumps(cla_dict, indent=4)
-#with open('./pytorch_class_label/pill_class_indices.json', 'w') as json_file:
+# json_str = json.dumps(cla_dict, indent=4)
+# with open('./pytorch_class_label/pill_class_indices.json', 'w') as json_file:
 #    json_file.write(json_str)
 
 # Create training and validation dataloaders
 dataloaders_dict = {
     x: torch.utils.data.DataLoader(image_datasets[x], batch_size=batch_size, num_workers=4, shuffle=True) for x in
     ['train', 'val']}
-
 
 # Detect if we have a GPU available
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -214,15 +212,14 @@ model_ft = model_ft.to(device)
 params_to_update = model_ft.parameters()
 
 # Observe that all parameters are being optimized
-optimizer_ft = optim.SGD(params_to_update, lr=0.0001, momentum=0.9)
-
+# optimizer_ft = optim.SGD(params_to_update, lr=0.0001, momentum=0.9)
+optimizer_ft = torch.optim.Adam(params_to_update, lr=1e-4, weight_decay=1e-5)
 # Setup the loss fxn
 criterion = nn.CrossEntropyLoss()
 
 # Train and evaluate
 model_ft, hist = train_model(model_ft, dataloaders_dict, criterion, optimizer_ft, num_epochs=num_epochs,
                              is_inception=False)
-
 
 # Plot the training curves of validation accuracy vs. number
 #  of training epochs for the transfer learning method and

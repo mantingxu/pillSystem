@@ -13,16 +13,16 @@ import model_pill_test as pillDenseNet
 # create folder
 # folder_name = createFolder.folder_name()
 # print(folder_name)
-folder_name = './1'
+folder_name = '/media/wall/4TB_HDD/full_dataset/0423_dataset/capsule2/'
 
 # take pictures
 # openWebcam.take_picture(folder_name)
 
 # detect
-detect_dir = pillDetection.run_detection(folder_name)
-print(detect_dir)  # dir store labels and images
+# detect_dir = pillDetection.run_detection(folder_name)
+# print(detect_dir)  # dir store labels and images
 # runs/detect/exp3
-
+detect_dir = 'runs/detect/exp7'
 # crop
 crop_dir = cropBoundingBox.crop_pill(detect_dir, folder_name)
 print(crop_dir)
@@ -32,11 +32,12 @@ print(crop_dir)
 print(resize_dir, capsule_class_txt, pill_class_txt)
 
 # recognition capsule
-capsuleDenseNet.predict_capsule_id(resize_dir, capsule_class_txt)
+# capsule_logger_path = capsuleDenseNet.predict_capsule_id(resize_dir, capsule_class_txt)
+# print(capsule_logger_path)
 
 # recognition pill
-pillDenseNet.predict_pill_id(resize_dir, pill_class_txt)
-
+# pill_logger_path = pillDenseNet.predict_pill_id(resize_dir, pill_class_txt)
+# print(pill_logger_path)
 
 
 # draw bounding box

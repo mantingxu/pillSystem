@@ -41,10 +41,10 @@ ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative path
 @smart_inference_mode()
 def run(
         weights=ROOT / 'runs/train/exp6/weights/best.pt',  # model path or triton URL
-        source='/media/wall/4TB_HDD/0401_new_env_all/',  # file/dir/URL/glob/screen/0(webcam)
+        source='/media/wall/4TB_HDD/full_dataset/database/',  # file/dir/URL/glob/screen/0(webcam)
         data=ROOT / 'data/pills.yaml',  # dataset.yaml path
         imgsz=(640, 640),  # inference size (height, width)
-        conf_thres=0.8,  # confidence threshold
+        conf_thres=0.7,  # confidence threshold
         iou_thres=0.4,  # NMS IOU threshold
         max_det=1000,  # maximum detections per image
         device='',  # cuda device, i.e. 0 or 0,1,2,3 or cpu

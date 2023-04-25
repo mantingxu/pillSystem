@@ -73,3 +73,4 @@ def predict_capsule_id(resize_dir, capsule_class_txt):
             logging.info(top5_real_id_numpy)
             logging.info('top-5 probability')
             logging.info(top5_prob)
+    return logger_file

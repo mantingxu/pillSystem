@@ -1,6 +1,26 @@
+pred: 4115
+truth: 325
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/325_24-0.png
+['4115', '325', '4061']
 pred: 4061
 truth: 4115
 /media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4115_0-0.png
+['4061', '4115', '2311']
+pred: 325
+truth: 2311
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2311_22-0.png
+['325', '4115', '2311']
+pred: 4115
+truth: 4061
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4061_24-0.png
+['4115', '4061', '2311']
+pred: 325
+truth: 2311
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/2311_25-0.png
+['325', '4115', '2311']
+pred: 4061
+truth: 4115
+/media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/4115_20-0.png
 ['4061', '4115', '2311']
 pred: 12370
 truth: 12501
@@ -10,4 +30,4 @@ pred: 6326
 truth: 12439
 /media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12439_0-0.png
 ['6326', '12439', '12448']
-{'4115', '12501', '12439'}
+{'325', '12501', '12439', '4061', '4115', '2311'}

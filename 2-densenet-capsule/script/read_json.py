@@ -19,7 +19,6 @@ except Exception as e:
 #     shutil.move(src_path,dst_path)
 
 
-
 for file in glob.glob('/media/wall/4TB_HDD/full_dataset/0423_dataset/compare_system_pill/*.png'):
     file_name = file.split('/')[-1]
     capsule_id = file.split('/')[-1].replace('.png', '').split('_')[0]

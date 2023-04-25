@@ -3,9 +3,9 @@ import glob
 import os
 
 
-
 def crop_pill(detect_dir, original_dir):
-    detect_dir = str(detect_dir.as_posix())
+    if not isinstance(detect_dir, str):
+        detect_dir = str(detect_dir.as_posix())
     source_dir = str(detect_dir).split('/')[-1]
     crop_path = './runs/crop/' + source_dir
     if not os.path.isdir(crop_path):
