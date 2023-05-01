@@ -10,7 +10,7 @@ def show_images(urls):
     print(urls)
     w = 10
     h = 10
-    columns = 4
+    columns = 6
     rows = 1
     fig = plt.figure(figsize=(6, 3))
     for i in range(1, columns * rows + 1):
@@ -18,7 +18,7 @@ def show_images(urls):
         img = cv2.imread(urls[i - 1])
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         fig.add_subplot(rows, columns, i)
-        ax = plt.subplot(140+i)
+        ax = plt.subplot(160+i)
         ax.set_title(capsule_id)
         plt.imshow(img)
     plt.show()

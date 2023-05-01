@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-
+import torch.nn as nn
 count = 1
 
 
@@ -48,7 +48,7 @@ def predict_capsule_id():
         # https://codeantenna.com/a/FMqJsklDXI
         path = "../weight/capsule_accuracy_0423_append_train.pth"
         model = torch.load(path)
-
+        layer = model._modules.get('avgpool')
         # predict model
         model.eval()
 
@@ -68,7 +68,7 @@ def predict_capsule_id():
             # predict class
             output = torch.squeeze(model(input_batch))
             predict = torch.softmax(output, dim=0)
-            top5_prob, top5_id = torch.topk(predict, 3)
+            top5_prob, top5_id = torch.topk(predict, 5)
             top5_prob = top5_prob.cpu().numpy()
             top5_id = top5_id.cpu().numpy()
             # predict custom pill id (top-1 custom id)
@@ -96,14 +96,14 @@ def predict_capsule_id():
             if pred != truth:
                 count += 1
                 error_pills.add(truth)
-            #     error_pills.add(truth)
+                #     error_pills.add(truth)
                 pre_message = 'pred: ' + pred
                 truth_message = 'truth: ' + truth
                 logging.info(pre_message)
                 logging.info(truth_message)
                 logging.info(filename)
                 logging.info(top5_real_id_numpy)
-            if pred not in top5_real_id_numpy:
+            if truth not in top5_real_id_numpy:
                 top5_count += 1
 
     class_names = list(class_indict.keys())
@@ -142,6 +142,74 @@ def predict_capsule_id():
     print('top-5 test accuracy:' + str(top5_accuracy) + '%')
     print(error_pills)
     logging.info(error_pills)
+    return layer, model
 
 
-predict_capsule_id()
+from torch.autograd import Variable
+
+normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                 std=[0.229, 0.224, 0.225])
+to_tensor = transforms.ToTensor()
+
+
+def get_vector(image_name,layer,model):
+    # 1. Load the image with Pillow library
+    img = Image.open(image_name)
+    # 2. Create a PyTorch Variable with the transformed image
+    t_img = Variable(normalize(to_tensor(img)).unsqueeze(0))
+
+    # 3. Create a vector of zeros that will hold our feature vector
+    #    The 'avgpool' layer has an output size of 512
+    my_embedding = torch.zeros(6)
+
+    # 4. Define a function that will copy the output of a layer
+    # def copy_data(m, i, o):
+    #     my_embedding.copy_(o.data)
+    def copy_data(m, i, o):
+        my_embedding.copy_(o.data.reshape(o.data.size(1)))
+
+    # 5. Attach that function to our selected layer
+    h = layer.register_forward_hook(copy_data)
+    # 6. Run the model on our transformed image
+    t_img = t_img.to('cuda')
+    model(t_img)
+    # 7. Detach our copy function from the layer
+    h.remove()
+    # 8. Return the feature vector
+    return my_embedding
+
+
+# layer, model = predict_capsule_id()
+path = "../weight/capsule_accuracy_0423_append_train.pth"
+model = torch.load(path)
+# print(model)
+
+# layer = model.features.denseblock4.denselayer16.relu2
+# layer = model.features.norm5
+# https://stackoverflow.com/questions/69023069/how-to-extract-the-feature-vectors-and-save-them-in-densenet121
+# print(layer)
+# predict model
+model.eval()
+image_path = '/home/wall/finalSystem/6-DBL/dataset/test/12222/12222_0-0.png'
+img = Image.open(image_path)
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                         std=[0.229, 0.224, 0.225])
+])
+
+img_tensor = transform(img).unsqueeze(0).to('cuda')
+print(img_tensor.shape)
+
+# Pass input image through feature extractor
+with torch.no_grad():
+    feature_map = model.features(img_tensor)
+    feature_map = feature_map.mean(dim=1, keepdim=True) # 取平均值，得到單通道的特徵地圖
+    print(feature_map)
+    print(feature_map.shape)
+    m = nn.Tanh()
+    output = m(feature_map).cpu().numpy()
+    np.set_printoptions(suppress=True)
+    print(output)
+    feature_vector = feature_map.view(1, -1)
+    print(feature_vector.shape)
