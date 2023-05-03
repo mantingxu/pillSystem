@@ -21,6 +21,7 @@ vector_list = []
 # /media/wall/4TB_HDD/full_dataset/0423_dataset/test_capsule_sharpen/12222_23-0.png
 # ['12448', '12222', '12083']
 
+
 def get_vector(im_path):
     img = Image.open(im_path)
     transform = transforms.Compose([
@@ -28,14 +29,13 @@ def get_vector(im_path):
         transforms.Normalize(mean=[0.485, 0.456, 0.406],
                              std=[0.229, 0.224, 0.225])
     ])
-
     img_tensor = transform(img).unsqueeze(0).to('cuda')
 
     # Pass input image through feature extractor
     with torch.no_grad():
-        feature_map = model.features(img_tensor)
-        feature_map = feature_map.mean(dim=1, keepdim=True)  # 取平均值，得到單通道的特徵地圖
-        feature_vector = feature_map.view(1, -1)
+        feature_map = model.features(img_tensor)  # denseNet
+        feature_map = feature_map.mean(dim=1, keepdim=True)  # 取平均值，得到單通道的特徵地圖 (1, C, H, W) =>  (1, 1, H, W)
+        feature_vector = feature_map.view(1, -1)  # 將 feature_map 攤平成一個一維向量
 
         return feature_vector
 
@@ -58,6 +58,7 @@ def get_top3_DBL(pillID):
         vector_list.append(feature_vector)
         img_list.append(image_path)
 
+    # target image
     query_pic_path = '/home/wall/finalSystem/6-DBL/dataset/test/12222/12222_23-0.png'
     query_pic_vector = get_vector(query_pic_path)
 
@@ -83,20 +84,27 @@ def get_top3_DBL(pillID):
 
     # tanh layer
     hadamard_tensor = torch.from_numpy(hadamard)
-    tanh = nn.Tanh()
+    tanh = nn.Tanh() # -1~1
     output = tanh(hadamard_tensor)
-    # print(output)
     return output
 
 
 vector_12222 = get_top3_DBL(12222)
 vector_12448 = get_top3_DBL(12448)
 vector_12083 = get_top3_DBL(12083)
-print(vector_12222)
-print(vector_12448)
-print(vector_12083)
+
 one_tensor = torch.cat((vector_12222, vector_12448), 1)
 final_tensor = torch.cat((one_tensor, vector_12083), 1)
 label_tensor = np.array([1, 0, 0])
 
+# create mlp model
+
 # create dataset for ['12448', '12222', '12083']
+
+# 1. choose target pill image(fx)
+# 2. get top3 pills id
+# 3. find knn (k=3)? ==> 3 similar images with target
+# 4. get 3 images avg => f_pillID
+# 5. create mlp dataset
+# input: [input (fx, f_pillID) ==> DBL output (vector) ==> concat top3 dbl output (1*3d)]
+# output => shape(1*3) ==> [0,0,1]
