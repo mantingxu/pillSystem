@@ -13,7 +13,7 @@ import model_pill_test as pillDenseNet
 # create folder
 # folder_name = createFolder.folder_name()
 # print(folder_name)
-folder_name = '/media/wall/4TB_HDD/full_dataset/0423_dataset/capsule2/'
+folder_name = '/media/wall/4TB_HDD/full_dataset/0510_pill/pill/'
 
 # take pictures
 # openWebcam.take_picture(folder_name)
@@ -22,7 +22,7 @@ folder_name = '/media/wall/4TB_HDD/full_dataset/0423_dataset/capsule2/'
 # detect_dir = pillDetection.run_detection(folder_name)
 # print(detect_dir)  # dir store labels and images
 # runs/detect/exp3
-detect_dir = 'runs/detect/exp7'
+detect_dir = 'runs/detect/exp8'
 # crop
 crop_dir = cropBoundingBox.crop_pill(detect_dir, folder_name)
 print(crop_dir)

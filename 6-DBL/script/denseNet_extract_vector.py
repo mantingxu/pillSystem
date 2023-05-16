@@ -21,7 +21,7 @@ img_tensor = transform(img).unsqueeze(0).to('cuda')
 # Pass input image through feature extractor
 with torch.no_grad():
     feature_map = model.features(img_tensor)
-    feature_map = feature_map.mean(dim=1, keepdim=True) # 取平均值，得到單通道的特徵地圖
+    feature_map = feature_map.mean(dim=1, keepdim=True)  # 取平均值，得到單通道的特徵地圖
     print(feature_map)
     print(feature_map.shape)
     m = nn.Tanh()

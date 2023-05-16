@@ -1,17 +1,16 @@
-from __future__ import print_function
 from __future__ import division
+from __future__ import print_function
+
 import warnings
 
 warnings.simplefilter("ignore", UserWarning)
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import numpy as np
 import torchvision
-from torchvision import datasets, models, transforms
+from torchvision import models, transforms
 import matplotlib.pyplot as plt
 import time
-import os
 import copy
 import torch.utils.data as data
 
@@ -187,7 +186,6 @@ image_datasets['val'] = valid_set
 # cla_dict = dict((val, key) for key, val in pill_list.items())
 
 # write dict into json file
-import json
 
 # json_str = json.dumps(cla_dict, indent=4)
 # with open('./pytorch_class_label/pill_class_indices.json', 'w') as json_file:

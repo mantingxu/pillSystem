@@ -1,0 +1,41 @@
+pred: 4049
+truth: 2408
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/2408_33-0.png
+['4049', '2408', '756', '630', '1032']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/1110_31-0.png
+['748', '1110', '1087', '1133', '2346']
+pred: 10299
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/2310_31-0.png
+['10299', '2090', '2310', '2247', '6363']
+pred: 2064
+truth: 1300
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/1300_31-0.png
+['2064', '1300', '2086', '725', '2101']
+pred: 1022
+truth: 316
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/316_35-0.png
+['1022', '316', '224', '690', '6023']
+pred: 2090
+truth: 2247
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/2247_37-0.png
+['2090', '2247', '6023', '6120', '10299']
+pred: 6007
+truth: 6036
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/6036_33-0.png
+['6007', '6036', '8024', '2000', '12512']
+pred: 6023
+truth: 2247
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/2247_33-0.png
+['6023', '2247', '2398', '2310', '2090']
+pred: 2064
+truth: 1300
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/1300_35-0.png
+['2064', '8460', '2086', '725', '1300']
+pred: 1093
+truth: 10249
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/test/10249_33-0.png
+['1093', '10249', '10244', '381', '6389']
+{'1300', '10249', '2408', '6036', '316', '2247', '1110', '2310'}

@@ -45,12 +45,15 @@ def split_capsule_pill(folder_name, resize_path, detect_dir):
     if not os.path.exists(split_folder_path):
         os.makedirs(split_folder_path)
     for resize_img_path in sorted(glob.glob(resize_path + '/*.png')):
-        print(resize_img_path)
+        # print(resize_img_path)
         line_number = resize_img_path.split('/')[-1].split('.')[0].split('-')[-1].replace('.png', '')
-        name = resize_img_path.split('/')[-1].split('.')[0].split('-')[0]
-        print(name)
-        label_path = detect_dir + '/labels/' + str(name) + '.txt'
+        if int(line_number) > 0:
+            print(resize_img_path)
 
+        name = resize_img_path.split('/')[-1].split('.')[0].split('-')[0]
+        # print(name)
+        label_path = detect_dir + '/labels/' + str(name) + '.txt'
+        # print(label_path)
         if not os.path.exists(label_path):
             # print('==========================================')
             # print(str(name))

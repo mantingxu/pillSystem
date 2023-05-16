@@ -1,0 +1,657 @@
+pred: 2387
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_39-0.png
+['2387', '10246', '560', '231', '713']
+pred: 748
+truth: 1205
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1205_37-0.png
+['748', '1133', '1135', '2346', '1087']
+pred: 705
+truth: 12050
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12050_38-0.png
+['705', '2133', '316', '224', '12353']
+pred: 12353
+truth: 224
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/224_36-0.png
+['12353', '2130', '2133', '6023', '690']
+pred: 1022
+truth: 1000
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1000_38-0.png
+['1022', '1000', '2000', '2155', '224']
+pred: 6340
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_37-0.png
+['6340', '705', '2312', '6120', '2247']
+pred: 6340
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_36-0.png
+['6340', '705', '1022', '2247', '2312']
+pred: 2319
+truth: 10228
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10228_38-0.png
+['2319', '10228', '12475', '800', '2301']
+pred: 10299
+truth: 281
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/281_33-0.png
+['10299', '281', '8460', '10060', '571']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_35-0.png
+['2064', '8460', '1300', '573', '281']
+pred: 10266
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_35-0.png
+['10266', '725', '10060', '2005', '1133']
+pred: 2120
+truth: 800
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/800_37-0.png
+['2120', '800', '721', '1135', '6317']
+pred: 1300
+truth: 725
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/725_38-0.png
+['1300', '725', '2361', '2086', '573']
+pred: 8320
+truth: 2155
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2155_30-0.png
+['8320', '10005', '571', '4149', '28']
+pred: 6120
+truth: 2312
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2312_35-0.png
+['6120', '2312', '2133', '6340', '690']
+pred: 6023
+truth: 2247
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2247_35-0.png
+['6023', '2247', '1022', '224', '705']
+pred: 10246
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_30-0.png
+['10246', '2387', '560', '231', '30']
+pred: 705
+truth: 6023
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6023_30-0.png
+['705', '1022', '6023', '224', '2040']
+pred: 2247
+truth: 316
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/316_34-0.png
+['2247', '705', '316', '2397', '281']
+pred: 725
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_39-0.png
+['725', '10266', '10060', '1133', '10299']
+pred: 4006
+truth: 12353
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12353_38-0.png
+['4006', '12490', '224', '12353', '2153']
+pred: 10266
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_36-0.png
+['10266', '1133', '10060', '10299', '281']
+pred: 6363
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_32-0.png
+['6363', '28', '2247', '10299', '10238']
+pred: 10299
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_30-0.png
+['10299', '2090', '6363', '2247', '2005']
+pred: 2155
+truth: 8320
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8320_32-0.png
+['2155', '8320', '4149', '281', '1096']
+pred: 6340
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_35-0.png
+['6340', '705', '1022', '2312', '224']
+pred: 1133
+truth: 2346
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2346_39-0.png
+['1133', '725', '748', '2361', '2346']
+pred: 10005
+truth: 2155
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2155_32-0.png
+['10005', '2155', '8320', '281', '2086']
+pred: 4006
+truth: 12353
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12353_39-0.png
+['4006', '12490', '2130', '12353', '224']
+pred: 1133
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_30-0.png
+['1133', '10060', '281', '2361', '2145']
+pred: 2000
+truth: 6036
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6036_35-0.png
+['2000', '6036', '6007', '8024', '1046']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_30-0.png
+['2064', '1300', '725', '2086', '8460']
+pred: 12490
+truth: 12424
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12424_30-0.png
+['12490', '12424', '8283', '2000', '224']
+pred: 573
+truth: 725
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/725_39-0.png
+['573', '725', '2086', '2361', '1133']
+pred: 6023
+truth: 224
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/224_39-0.png
+['6023', '12353', '2130', '690', '224']
+pred: 10228
+truth: 2319
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2319_33-0.png
+['10228', '2319', '1233', '800', '10223']
+pred: 8460
+truth: 2064
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2064_34-0.png
+['8460', '2064', '281', '573', '2086']
+pred: 2247
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_34-0.png
+['2247', '28', '6363', '10299', '2398']
+pred: 2389
+truth: 2305
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2305_37-0.png
+['2389', '2305', '930', '1094', '12590']
+pred: 2064
+truth: 1300
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1300_30-0.png
+['2064', '1300', '2086', '725', '573']
+pred: 381
+truth: 10244
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10244_33-0.png
+['381', '10244', '10249', '1093', '8283']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_31-0.png
+['748', '1133', '4049', '10277', '2361']
+pred: 4006
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_31-0.png
+['4006', '705', '2398', '6023', '316']
+pred: 8320
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_30-0.png
+['8320', '571', '2310', '28', '4149']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_35-0.png
+['748', '1205', '1087', '10277', '1032']
+pred: 725
+truth: 2005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2005_39-0.png
+['725', '2005', '2086', '2064', '1300']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_37-0.png
+['748', '1087', '2346', '10277', '1205']
+pred: 8460
+truth: 2064
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2064_33-0.png
+['8460', '281', '2064', '573', '10238']
+pred: 10299
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_31-0.png
+['10299', '2247', '2398', '6363', '28']
+pred: 10266
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_37-0.png
+['10266', '725', '573', '1133', '10060']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_39-0.png
+['2064', '1300', '8460', '2086', '573']
+pred: 1022
+truth: 1000
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1000_39-0.png
+['1022', '1000', '1096', '2397', '2040']
+pred: 2155
+truth: 8320
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8320_31-0.png
+['2155', '8320', '281', '4149', '1096']
+pred: 10246
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_31-0.png
+['10246', '560', '2387', '1020', '231']
+pred: 2101
+truth: 910
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/910_34-0.png
+['2101', '2398', '28', '910', '95']
+pred: 1000
+truth: 1022
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1022_39-0.png
+['1000', '1022', '6023', '2310', '2090']
+pred: 1133
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_31-0.png
+['1133', '10060', '2361', '2064', '2145']
+pred: 10005
+truth: 505
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/505_30-0.png
+['10005', '2155', '8320', '281', '505']
+pred: 4006
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_32-0.png
+['4006', '2040', '6023', '705', '2247']
+pred: 281
+truth: 10005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10005_33-0.png
+['281', '10005', '4149', '571', '8320']
+pred: 6023
+truth: 2247
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2247_34-0.png
+['6023', '2247', '705', '1096', '12353']
+pred: 10228
+truth: 2319
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2319_36-0.png
+['10228', '2120', '2319', '2301', '800']
+pred: 2247
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_33-0.png
+['2247', '28', '6363', '8320', '10299']
+pred: 505
+truth: 8320
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8320_34-0.png
+['505', '8320', '1096', '2247', '10005']
+pred: 2064
+truth: 1300
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1300_31-0.png
+['2064', '2086', '8460', '573', '1300']
+pred: 6363
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_38-0.png
+['6363', '2398', '2247', '2090', '28']
+pred: 725
+truth: 2361
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2361_37-0.png
+['725', '1300', '2086', '2361', '2064']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_32-0.png
+['748', '1133', '1205', '10277', '1032']
+pred: 725
+truth: 2005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2005_38-0.png
+['725', '2005', '1300', '2086', '10238']
+pred: 2133
+truth: 2130
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2130_31-0.png
+['2133', '2130', '6120', '12050', '4006']
+pred: 2312
+truth: 6120
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6120_30-0.png
+['2312', '6120', '690', '2133', '6340']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_30-0.png
+['748', '1133', '1032', '2408', '1205']
+pred: 2387
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_34-0.png
+['2387', '560', '10246', '231', '1020']
+pred: 8283
+truth: 27
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/27_36-0.png
+['8283', '27', '6389', '10249', '12512']
+pred: 1096
+truth: 1000
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1000_33-0.png
+['1096', '1000', '505', '1022', '2040']
+pred: 1205
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_39-0.png
+['1205', '1110', '10277', '1233', '2346']
+pred: 2090
+truth: 2247
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2247_37-0.png
+['2090', '2247', '6023', '2040', '2005']
+pred: 2064
+truth: 2361
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2361_33-0.png
+['2064', '2361', '1300', '725', '2086']
+pred: 2120
+truth: 1133
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1133_34-0.png
+['2120', '1087', '1133', '2005', '10070']
+pred: 10005
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_36-0.png
+['10005', '281', '573', '571', '2397']
+pred: 1022
+truth: 6023
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6023_34-0.png
+['1022', '1096', '1000', '2000', '705']
+pred: 2133
+truth: 12050
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12050_39-0.png
+['2133', '12050', '2247', '8283', '705']
+pred: 10246
+truth: 2387
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2387_30-0.png
+['10246', '2387', '231', '51', '560']
+pred: 1300
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_33-0.png
+['1300', '2064', '2086', '4149', '10238']
+pred: 1135
+truth: 2346
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2346_35-0.png
+['1135', '2346', '748', '2361', '1133']
+pred: 2064
+truth: 725
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/725_32-0.png
+['2064', '1300', '2086', '725', '2101']
+pred: 281
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_35-0.png
+['281', '10005', '571', '573', '8320']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_34-0.png
+['2064', '2086', '1300', '8460', '573']
+pred: 1022
+truth: 6023
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6023_31-0.png
+['1022', '6023', '2000', '2040', '2090']
+pred: 6363
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_37-0.png
+['6363', '2398', '2090', '281', '910']
+pred: 2086
+truth: 1300
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1300_33-0.png
+['2086', '725', '2064', '1300', '573']
+pred: 748
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_36-0.png
+['748', '1133', '1087', '10277', '2346']
+pred: 10005
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_37-0.png
+['10005', '571', '4149', '8320', '573']
+pred: 2064
+truth: 725
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/725_34-0.png
+['2064', '725', '2086', '1300', '6317']
+pred: 8320
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_31-0.png
+['8320', '571', '1096', '2310', '2397']
+pred: 6023
+truth: 224
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/224_35-0.png
+['6023', '12353', '705', '224', '12490']
+pred: 2064
+truth: 725
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/725_31-0.png
+['2064', '1300', '725', '2086', '6317']
+pred: 8320
+truth: 4149
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/4149_32-0.png
+['8320', '4149', '10005', '2310', '2398']
+pred: 6007
+truth: 6036
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6036_33-0.png
+['6007', '2000', '6036', '1046', '250']
+pred: 2145
+truth: 6319
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6319_31-0.png
+['2145', '1133', '800', '6319', '818']
+pred: 6007
+truth: 2000
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2000_33-0.png
+['6007', '2000', '6036', '12490', '2155']
+pred: 2086
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_32-0.png
+['2086', '2064', '8460', '1300', '573']
+pred: 10246
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_36-0.png
+['10246', '560', '2387', '51', '30']
+pred: 10246
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_35-0.png
+['10246', '560', '51', '30', '2387']
+pred: 748
+truth: 2346
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2346_38-0.png
+['748', '2346', '1133', '1135', '1087']
+pred: 381
+truth: 10244
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10244_34-0.png
+['381', '10244', '10249', '1093', '10261']
+pred: 10246
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_37-0.png
+['10246', '560', '2387', '394', '51']
+pred: 12490
+truth: 12424
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12424_31-0.png
+['12490', '12424', '6340', '12028', '1132']
+pred: 10005
+truth: 4149
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/4149_34-0.png
+['10005', '8320', '2155', '4149', '505']
+pred: 573
+truth: 2064
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2064_31-0.png
+['573', '2086', '2064', '8460', '1300']
+pred: 2064
+truth: 1300
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1300_35-0.png
+['2064', '8460', '571', '573', '2086']
+pred: 1205
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_38-0.png
+['1205', '1233', '10277', '1133', '1110']
+pred: 27
+truth: 8283
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8283_37-0.png
+['27', '8283', '10249', '12512', '226']
+pred: 2387
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_33-0.png
+['2387', '10246', '560', '1020', '231']
+pred: 10238
+truth: 2005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2005_33-0.png
+['10238', '2005', '10266', '10060', '95']
+pred: 6363
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_35-0.png
+['6363', '2247', '2090', '2398', '281']
+pred: 2120
+truth: 800
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/800_31-0.png
+['2120', '800', '6319', '1133', '626']
+pred: 2247
+truth: 2398
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2398_35-0.png
+['2247', '2398', '8320', '2310', '6363']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_38-0.png
+['2064', '1300', '573', '2086', '281']
+pred: 2064
+truth: 2361
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2361_34-0.png
+['2064', '725', '1300', '2361', '2086']
+pred: 1133
+truth: 1205
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1205_31-0.png
+['1133', '1205', '6120', '6317', '721']
+pred: 2398
+truth: 2090
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2090_38-0.png
+['2398', '2090', '28', '6363', '2247']
+pred: 4006
+truth: 12353
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12353_35-0.png
+['4006', '12353', '2133', '224', '6023']
+pred: 1205
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_34-0.png
+['1205', '1133', '748', '1032', '910']
+pred: 10238
+truth: 2005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2005_34-0.png
+['10238', '2005', '2064', '1300', '2086']
+pred: 8460
+truth: 2064
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2064_32-0.png
+['8460', '2064', '281', '573', '2086']
+pred: 10260
+truth: 231
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/231_39-0.png
+['10260', '231', '2400', '2305', '263']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_31-0.png
+['2064', '1300', '2086', '8460', '725']
+pred: 8320
+truth: 4149
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/4149_33-0.png
+['8320', '4149', '10005', '2155', '2398']
+pred: 1133
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_33-0.png
+['1133', '10060', '2145', '281', '2361']
+pred: 6363
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_39-0.png
+['6363', '10070', '910', '10238', '2398']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_36-0.png
+['2064', '8460', '573', '2086', '1300']
+pred: 1096
+truth: 1000
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1000_36-0.png
+['1096', '1000', '1022', '505', '2000']
+pred: 8320
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_32-0.png
+['8320', '10005', '571', '505', '4149']
+pred: 2247
+truth: 2398
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2398_39-0.png
+['2247', '2398', '6363', '2130', '10299']
+pred: 930
+truth: 2389
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2389_35-0.png
+['930', '2389', '2305', '175', '12590']
+pred: 6340
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_39-0.png
+['6340', '705', '2247', '6120', '4006']
+pred: 6023
+truth: 2247
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2247_30-0.png
+['6023', '2247', '12353', '705', '2120']
+pred: 8320
+truth: 571
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/571_33-0.png
+['8320', '10005', '4149', '281', '2397']
+pred: 748
+truth: 1205
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1205_39-0.png
+['748', '1133', '1205', '6317', '2090']
+pred: 8460
+truth: 10005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10005_32-0.png
+['8460', '10005', '2310', '8320', '505']
+pred: 2247
+truth: 2398
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2398_36-0.png
+['2247', '6363', '2398', '8320', '2090']
+pred: 12558
+truth: 175
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/175_39-0.png
+['12558', '175', '700', '12590', '550']
+pred: 6023
+truth: 224
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/224_38-0.png
+['6023', '2130', '2133', '12490', '12353']
+pred: 10228
+truth: 12475
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12475_32-0.png
+['10228', '12475', '2319', '2301', '2366']
+pred: 1133
+truth: 10060
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10060_38-0.png
+['1133', '281', '10299', '1233', '573']
+pred: 2133
+truth: 12353
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12353_36-0.png
+['2133', '4006', '2130', '12050', '12353']
+pred: 2120
+truth: 800
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/800_33-0.png
+['2120', '800', '10223', '10228', '2389']
+pred: 2155
+truth: 8320
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8320_39-0.png
+['2155', '8320', '281', '10005', '4149']
+pred: 1022
+truth: 6023
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/6023_33-0.png
+['1022', '6023', '2040', '224', '2090']
+pred: 1093
+truth: 10249
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/10249_35-0.png
+['1093', '10249', '2366', '381', '10244']
+pred: 1205
+truth: 1110
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1110_33-0.png
+['1205', '1133', '748', '1032', '10277']
+pred: 10246
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_38-0.png
+['10246', '2387', '560', '231', '1020']
+pred: 6363
+truth: 2310
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2310_36-0.png
+['6363', '910', '1133', '281', '10070']
+pred: 2387
+truth: 560
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/560_32-0.png
+['2387', '560', '10246', '231', '1020']
+pred: 4006
+truth: 705
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/705_34-0.png
+['4006', '705', '6023', '2398', '2397']
+pred: 626
+truth: 818
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/818_34-0.png
+['626', '818', '1233', '6319', '2145']
+pred: 8320
+truth: 281
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/281_36-0.png
+['8320', '28', '281', '1022', '2398']
+pred: 2064
+truth: 8460
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/8460_37-0.png
+['2064', '1300', '2086', '573', '4149']
+pred: 725
+truth: 2005
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2005_32-0.png
+['725', '2086', '2064', '2005', '10238']
+pred: 6120
+truth: 2133
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/2133_31-0.png
+['6120', '2133', '2312', '690', '12490']
+pred: 1096
+truth: 1000
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1000_32-0.png
+['1096', '1000', '505', '250', '2397']
+pred: 748
+truth: 1205
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/1205_38-0.png
+['748', '6317', '1135', '1133', '721']
+pred: 12490
+truth: 12424
+/media/wall/4TB_HDD/full_dataset/0511_dataset/pill/test/12424_32-0.png
+['12490', '12424', '6340', '224', '8283']
+{'12475', '2398', '2247', '8283', '6023', '910', '10244', '2064', '505', '6319', '10249', '2346', '6036', '1205', '12424', '2130', '224', '571', '560', '281', '1022', '27', '2133', '316', '10005', '2312', '800', '12353', '2310', '2319', '2000', '12050', '1300', '1110', '1133', '2389', '1000', '8460', '6120', '818', '10060', '705', '2090', '4149', '175', '2305', '10228', '2387', '2155', '2005', '8320', '2361', '231', '725'}

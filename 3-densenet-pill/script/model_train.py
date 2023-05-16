@@ -15,12 +15,12 @@ import os
 import copy
 import torch.utils.data as data
 
-data_dir = '/media/wall/4TB_HDD/1211_dataset/split_train_valid/train_pytorch_pixel_transform'
-valid_data_dir = '/media/wall/4TB_HDD/1211_dataset/split_train_valid/valid_pytorch'
+data_dir = '/media/wall/4TB_HDD/full_dataset/0511_dataset/pill2/train/pill_pytorch'
+# valid_data_dir = '/media/wall/4TB_HDD/1211_dataset/split_train_valid/valid_pytorch'
 model_name = "densenet"
-num_classes = 182
+num_classes = 179
 batch_size = 64
-num_epochs = 50
+num_epochs = 60
 # Flag for feature extracting. When False, we finetune the whole model,
 #   when True we only update the reshaped layer params
 feature_extract = False
@@ -110,7 +110,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
 
 
 def saveModel():
-    path = "../best_weight/best_accuracy_pill.pth"
+    path = "../weight/best_accuracy_pill_0517.pth"
     # torch.save(model.state_dict(), path)
     torch.save(model_ft, path)
 
@@ -131,7 +131,7 @@ def initialize_model(model_name, num_classes, feature_extract, use_pretrained=Fa
         set_parameter_requires_grad(model_ft, feature_extract)
         num_ftrs = model_ft.classifier.in_features
         model_ft.classifier = nn.Linear(num_ftrs, num_classes)
-        input_size = 150
+        input_size = 200
     else:
         print("Invalid model name, exiting...")
         exit()
@@ -144,7 +144,7 @@ model_ft, input_size = initialize_model(model_name, num_classes, feature_extract
 
 
 print("Initializing Datasets and Dataloaders...")
-train_set = torchvision.datasets.ImageFolder(data_dir,
+dataset = torchvision.datasets.ImageFolder(data_dir,
                                              transform=transforms.Compose([
                                                  transforms.ToTensor(),
                                                  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
@@ -152,17 +152,19 @@ train_set = torchvision.datasets.ImageFolder(data_dir,
                                              ])
                                              )
 
-valid_set = torchvision.datasets.ImageFolder(valid_data_dir,
-                                             transform=transforms.Compose([
-                                                 transforms.ToTensor(),
-                                                 transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-                                                 #transforms.Normalize(mean=[0.137, 0.134, 0.116], std=[0.293, 0.286, 0.254]),
-                                             ])
-                                             )
+# valid_set = torchvision.datasets.ImageFolder(valid_data_dir,
+#                                              transform=transforms.Compose([
+#                                                  transforms.ToTensor(),
+#                                                  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+#                                                  #transforms.Normalize(mean=[0.137, 0.134, 0.116], std=[0.293, 0.286, 0.254]),
+#                                              ])
+#                                              )
+print(dataset.__len__())
+train_set, valid_set = torch.utils.data.random_split(dataset, [17 * 179, 8 * 179])
 
-print(train_set.class_to_idx)
-# pill_list = image_datasets['train'].class_to_idx
-pill_list = train_set.class_to_idx
+# print(train_set.class_to_idx)
+pill_list = dataset.class_to_idx
+# pill_list = train_set.class_to_idx
 
 
 #train_set_size = int(len(train_set) * 0.7)
@@ -188,9 +190,9 @@ cla_dict = dict((val, key) for key, val in pill_list.items())
 # write dict into json file
 import json
 
-#json_str = json.dumps(cla_dict, indent=4)
-#with open('./pytorch_class_label/pill_class_indices.json', 'w') as json_file:
-#    json_file.write(json_str)
+json_str = json.dumps(cla_dict, indent=4)
+with open('../label/new_pill_class_indices.json', 'w') as json_file:
+   json_file.write(json_str)
 
 # Create training and validation dataloaders
 dataloaders_dict = {
@@ -212,7 +214,8 @@ model_ft = model_ft.to(device)
 params_to_update = model_ft.parameters()
 
 # Observe that all parameters are being optimized
-optimizer_ft = optim.SGD(params_to_update, lr=0.001, momentum=0.9)
+# optimizer_ft = optim.SGD(params_to_update, lr=0.001, momentum=0.9)
+optimizer_ft = torch.optim.Adam(params_to_update, lr=1e-4, weight_decay=1e-5)
 
 # Setup the loss fxn
 criterion = nn.CrossEntropyLoss()

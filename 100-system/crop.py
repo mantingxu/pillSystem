@@ -50,5 +50,7 @@ def crop_pill(detect_dir, original_dir):
             crop_img = img[ymin:ymin + h0, xmin:xmin + w0]
             file_name = crop_path + '/' + name + '-' + str(count) + '.png'
             count += 1
+            if count > 1:
+                print(file_name)
             cv2.imwrite(file_name, crop_img)
     return crop_path
